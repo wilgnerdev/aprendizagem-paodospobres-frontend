@@ -1,0 +1,37 @@
+:root {
+  --azul-pao: rgb(0, 56, 117);
+  --azul-claro: rgb(0, 114, 206);
+  --texto-principal: rgb(50, 50, 50);
+  --branco-puro: rgb(255, 255, 255);
+  --cinza-claro: #f4f6f8;
+  --cor-preto: #333333;
+  --cor-cinza-texto: #666666;
+  --cor-cinza-medio: #e0e0e0;
+  --bg-cinza-claro: #F2F6F8;
+  --cinza-opaco: #5B6672;
+  --azul-escuro: #082C57;
+  --cinza-linha: #eeecee;
+
+  --fonte-destaque: "Outfit", sans-serif;
+  --fonte-texto: "Inter", sans-serif;
+
+  --dourado-frio: rgb(197, 168, 115);
+  --fundo-off-white: rgb(248, 247, 242);
+  --azul-aco-divisor: rgb(165, 181, 201);
+  --azul-marinho-profundo: rgb(15, 35, 70);
+  --cor-azul-escuro: #004a99;
+  --cor-laranja-hover: #e65c00;
+
+  --rosa-hub: rgb(231, 46, 114);
+  --verde-agua-hub: rgb(0, 168, 176);
+  --verde-agua: #00d1d3;
+  --azul-footer: #006F9A;
+  --laranja-alerta: rgb(243, 115, 33);
+  --amarelo-hub: rgb(255, 212, 0);
+
+  --linha-card: #E1E7ED;
+  --cor-icone: #0E7986;
+  --bg-icone: #E4F5F7;
+  --azul-oceano-escuro: #0b7c84;
+  --alerta: #C62828;
+}
