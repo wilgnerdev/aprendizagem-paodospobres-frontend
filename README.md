@@ -23,16 +23,39 @@ O objetivo é oferecer um portal onde jovens possam conhecer os cursos da Funda�
 
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
-- [Node.js + npm](https://nodejs.org/pt-br)
+- [Node.js](https://nodejs.org/pt-br) + npm
 - ESLint
+
+## Pré-requisitos
+
+Antes de rodar o projeto, você precisa ter instalado:
+
+- **[Node.js](https://nodejs.org/pt-br)** (versão LTS recomendada). O **npm** já vem incluído na instalação.
+- **[Git](https://git-scm.com/)**, para clonar o repositório.
+
+Para conferir se estão instalados, rode no terminal:
+
+```bash
+node -v
+npm -v
+git --version
+```
+
+Se cada comando mostrar um número de versão, está tudo pronto.
 
 ## Como rodar localmente
 
 ```bash
-# instalar dependências
+# 1. clonar o repositório
+git clone https://github.com/wilgnerdev/aprendizagem-paodospobres.git
+
+# 2. entrar na pasta do projeto
+cd aprendizagem-paodospobres
+
+# 3. instalar as dependências
 npm install
 
-# iniciar o servidor de desenvolvimento
+# 4. iniciar o servidor de desenvolvimento
 npm run dev
 ```
 
@@ -41,11 +64,19 @@ Depois, acesse o endereço exibido no terminal (geralmente `http://localhost:517
 ## Estrutura de pastas
 
 ```
-├── public/        # arquivos estáticos
-├── src/           # código-fonte da aplicação
-├── index.html     # página principal
-├── vite.config.js # configuração do Vite
-└── package.json   # dependências e scripts
+├── public/                 # arquivos estáticos
+├── src/
+│   ├── components/
+│   │   └── Header/         # componente de cabeçalho (Header.jsx + Header.css)
+│   ├── styles/
+│   │   ├── global.css      # estilos globais
+│   │   └── tokens.css      # variáveis de design (cores, espaçamentos, fontes)
+│   ├── App.jsx             # componente raiz
+│   └── main.jsx            # ponto de entrada da aplicação
+├── index.html              # página principal
+├── eslint.config.js        # configuração do ESLint
+├── vite.config.js          # configuração do Vite
+└── package.json            # dependências e scripts
 ```
 
 ## Back-end
@@ -54,7 +85,7 @@ A API (Java + Spring Boot) e o banco de dados ficam em um repositório separado.
 
 ## Contexto
 
-Projeto desenvolvido como projeto final da formação **Dev Full Stack Júnior** do [+praTI](https://github.com/wilgnerdev) / Codifica.
+Projeto desenvolvido como projeto final da formação **Dev Full Stack Júnior** da +praTI / Codifica.
 
 ## Autor
 
