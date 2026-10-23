@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cinza-claro);
+}
+
+h1 {
+    font-size: clamp(2.2rem, 7vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.4rem, 7vw, 1.9rem);
+}
+
+p {
+    color: var(--texto-principal);
+    font-family: var(--fonte-texto);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+/* Buttons */
+
+.btn {
+    color: var(--branco-puro);
+    background-color: var(--laranja-alerta);
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--cor-laranja-hover);
+}
+
+
