@@ -92,7 +92,7 @@ export default function Header() {
       <nav className="navbar" aria-label="Navegação principal">
         <a className="logo" href="" onClick={closeMenu}>
           <img
-            src="./public/images/logo-pao-dos-pobres.png"
+            src="/images/logo-pao-dos-pobres.png"
             alt="Logo Fundação O Pão dos Pobres"
           />
         </a>
