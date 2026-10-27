@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Header.css";
 
@@ -90,12 +90,12 @@ export default function Header() {
       </div>
 
       <nav className="navbar" aria-label="Navegação principal">
-        <a className="logo" href="" onClick={closeMenu}>
+        <Link className="logo" to="/" onClick={closeMenu}>
           <img
             src="/images/logo-pao-dos-pobres.png"
             alt="Logo Fundação O Pão dos Pobres"
           />
-        </a>
+        </Link>
 
         <button
           className={`mobile-menu ${menuOpen ? "active" : ""}`}
@@ -116,31 +116,31 @@ export default function Header() {
           inert={isMobile && !menuOpen}
         >
           <li>
-            <a href="" onClick={closeMenu}>
+            <Link to="/" onClick={closeMenu}>
               Home
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="" onClick={closeMenu}>
+            <Link to="/#cursos" onClick={closeMenu}>
               Cursos
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="" onClick={closeMenu}>
+            <Link to="/" onClick={closeMenu}>
               FAQ
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="btn list"
-              href=""
+              to="/inscricao"
               onClick={closeMenu}
             >
               Inscrever-se
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
