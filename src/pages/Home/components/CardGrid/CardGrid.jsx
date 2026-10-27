@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./CardGrid.css";
-import { cursos } from "../../data/cursos";
+import { cursos } from "../../../../data/cursos";
 
 function CardGrid() {
     return (

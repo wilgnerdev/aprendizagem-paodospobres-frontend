@@ -1,0 +1,40 @@
+.banner-destaque {
+    background: url(/images/cursos/professorjuliano-e-aluno.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-banner-destaque {
+    padding: 0 20px;
+    max-width: 500px;
+}
+
+.banner-title {
+    color: #fff;
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 2px 1px 2px #333;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 900px){
+    .banner-destaque {
+        padding: 0 1.5rem;
+        height: 60vh;
+    }
+
+    .texto-banner-destaque {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 362px) {
+    .btn {
+        font-size: 12px;
+    }
+}
