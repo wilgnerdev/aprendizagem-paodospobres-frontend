@@ -54,4 +54,38 @@ p {
     background-color: var(--cor-laranja-hover);
 }
 
+.ver-detalhes {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    margin-top: auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--verde-agua-hub);
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.ver-detalhes:hover {
+    background-color: var(--azul-oceano-escuro);
+}
+
+.ver-detalhes svg {
+    width: 14px;
+    height: 14px;
+    color: #ffF;
+    transition: transform 0.15s ease;
+}
+
+.ver-detalhes:hover svg {
+    transform: translateX(3px);
+}
+
 
