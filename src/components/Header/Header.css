@@ -26,10 +26,6 @@
   transition: color 0.3s ease;
 }
 
-.nav-social nav a:hover {
-  color: var(--azul-claro);
-}
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -65,28 +61,27 @@
   font-size: 20px;
 }
 
-.nav-list a {
+.nav-list li > * {
   color: var(--azul-pao);
   text-decoration: none;
   transition: color 0.3s ease;
   text-transform: uppercase;
 }
 
-.nav-list a:hover {
+.nav-list li > *:hover {
   color: var(--azul-claro);
 }
 
-.nav-list .btn.list {
+.btn.list {
   color: #fff;
   transition: background-color 0.3s ease;
 }
 
-.nav-list .btn.list:hover {
+.btn.list:hover {
   color: #fff;
-  background-color: var(--azul-claro);
 }
 
-.nav-list a:focus-visible,
+.nav-list li > *:focus-visible,
 .logo:focus-visible,
 .nav-social a:focus-visible,
 .mobile-menu:focus-visible {
