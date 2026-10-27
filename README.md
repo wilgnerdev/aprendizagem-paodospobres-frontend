@@ -61,23 +61,43 @@ npm run dev
 
 Depois, acesse o endereço exibido no terminal (geralmente `http://localhost:5173`).
 
+Para gerar a versão de produção (pasta `dist/`):
+
+```bash
+npm run build
+```
+
 ## Estrutura de pastas
 
 ```
-├── public/                 # arquivos estáticos
+├── public/                     # arquivos estáticos
 ├── src/
-│   ├── components/
-│   │   └── Header/         # componente de cabeçalho (Header.jsx + Header.css)
-│   ├── styles/
-│   │   ├── global.css      # estilos globais
-│   │   └── tokens.css      # variáveis de design (cores, espaçamentos, fontes)
-│   ├── App.jsx             # componente raiz
-│   └── main.jsx            # ponto de entrada da aplicação
-├── index.html              # página principal
-├── eslint.config.js        # configuração do ESLint
-├── vite.config.js          # configuração do Vite
-└── package.json            # dependências e scripts
+│   ├── components/             # componentes reutilizáveis em todo o site
+│   │   ├── Footer/             # rodapé
+│   │   └── Header/             # cabeçalho
+│   ├── data/
+│   │   └── cursos.js           # dados dos cursos (lista usada nas páginas)
+│   ├── pages/                  # uma pasta por página do site
+│   │   ├── CursoDetalhes/      # página com as informações de um curso (CursoDetalhes.jsx + CursoDetalhes.css)
+│   └── Home/                   # pasta da página inicial
+│   │   ├── components/         # componentes usados apenas na Home
+│   │   │   ├── CardGrid/       # grade de cards dos cursos (CardGrid.jsx + CardGrid.css)
+│   │   │   └── HomeBanner/     # banner da página inicial
+│   │   └── Home.jsx
+│   ├── styles/                 # estilos globais e variáveis de design
+│   ├── App.jsx                 # componente raiz
+│   └── main.jsx                # ponto de entrada da aplicação
+├── index.html                  # página principal
+├── eslint.config.js            # configuração do ESLint
+├── vite.config.js              # configuração do Vite
+└── package.json                # dependências e scripts
 ```
+
+### Organização do código
+
+- **`components/`** guarda o que é compartilhado entre várias páginas (Header, Footer).
+- **`pages/`** guarda cada página do site. Componentes que só fazem sentido dentro de uma página ficam na pasta `components/` dessa própria página (ex.: `Home/components/CardGrid`).
+- **`data/`** guarda os dados em arquivos JavaScript enquanto a API não está integrada. Futuramente, esses dados virão do back-end.
 
 ## Back-end
 
