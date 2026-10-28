@@ -1,0 +1,28 @@
+.link-formulario {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+}
+
+.link-formulario-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link-formulario-titulo {
+    color: var(--azul-pao);    
+    margin-bottom: 15px;
+}
+
+.link-formulario-paragrafo {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-link-formulario {
+    display: block;
+    
+}
