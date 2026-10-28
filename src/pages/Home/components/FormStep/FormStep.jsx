@@ -1,6 +1,6 @@
-import './StepForms.css'
+import './FormStep.css'
 
-function StepForms() {
+function FormStep() {
     return (
         <aside class="step-section">
         <div class="step-body">
@@ -41,4 +41,4 @@ function StepForms() {
     )
 } 
 
-export default StepForms
+export default FormStep

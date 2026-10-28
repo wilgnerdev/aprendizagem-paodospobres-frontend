@@ -1,7 +1,7 @@
 import CardGrid from "./components/CardGrid/CardGrid";
 import Banner from "./components/HomeBanner/HomeBanner";
 import HomeAbout from "./components/HomeAbout/HomeAbout";
-import StepForms from "./components/StepForms/StepForms";
+import FormStep from "./components/FormStep/FormStep";
 
 function Home() {
     return (
@@ -9,7 +9,7 @@ function Home() {
             <Banner />
             <HomeAbout />
             <CardGrid />
-            <StepForms />
+            <FormStep />
         </main>
     )
 }
