@@ -1,8 +1,8 @@
 
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { getCursoPorId, notaPcD } from "../../data/cursos";
-import "./CursoDetalhes.css";
+import { useEffect, useState } from "react"
+import { Link, useParams } from "react-router-dom"
+import { getCursoPorId, notaPcD } from "../../data/cursos"
+import "./CursoDetalhes.css"
 
 function CursoDetalhes() {
   const { id } = useParams();
@@ -154,7 +154,7 @@ function CursoDetalhes() {
         </aside>
       </main>
     </>
-  );
+  )
 }
 
 function LinhaHabilidade({ habilidade, indice }) {
@@ -207,7 +207,7 @@ function LinhaHabilidade({ habilidade, indice }) {
         </>
       )}
     </div>
-  );
+  )
 }
 
 export default CursoDetalhes
