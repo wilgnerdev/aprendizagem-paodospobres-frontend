@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import "./CardGrid.css";
-import { cursos } from "../../../../data/cursos";
+import { Link } from "react-router-dom"
+import "./CardGrid.css"
+import { cursos } from "../../../../data/cursos"
 
 function CardGrid() {
     return (
@@ -58,7 +58,7 @@ function CardGrid() {
                 ))}
             </div>
         </section>
-    );
+    )
 }
 
-export default CardGrid;
+export default CardGrid

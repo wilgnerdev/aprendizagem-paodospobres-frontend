@@ -1,11 +1,10 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { useLayoutEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
+import { useLayoutEffect } from "react"
 
-import Header from "./components/Header/Header";
-import Home from "./pages/Home/Home.jsx";
-import HomeAbout from "./pages/Home/components/HomeAbout/HomeAbout.jsx";
-import CursoDetalhes from "./pages/CursoDetalhes/CursoDetalhes.jsx";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header"
+import Home from "./pages/Home/Home.jsx"
+import CursoDetalhes from "./pages/CursoDetalhes/CursoDetalhes.jsx"
+import Footer from "./components/Footer/Footer"
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -37,9 +36,9 @@ function App() {
         <Route path="/cursos/:id" element={<CursoDetalhes />} />
       </Routes>
 
-      { <Footer />}
+      { <Footer /> }
     </BrowserRouter>
   )
 }
 
-export default App;
+export default App
