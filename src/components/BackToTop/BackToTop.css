@@ -1,0 +1,28 @@
+.back-to-top {
+  position: fixed;
+  right: 0.6rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--azul-escuro);
+  color: #fff;
+  z-index: 1000;
+}
+.back-to-top:focus-visible { outline: 3px solid #ffbf47; outline-offset: 3px; }
+.back-to-top svg { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+@supports (animation-timeline: scroll()) {
+  .back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    animation: aparecer linear both;
+    animation-timeline: scroll(root);
+    animation-range: 50vh 60vh;
+  }
+  @keyframes aparecer {
+    to { opacity: 1; visibility: visible; }
+  }
+}

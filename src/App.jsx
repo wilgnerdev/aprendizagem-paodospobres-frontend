@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer"
 import FaqPage from "./pages/FaqPage/FaqPage.jsx"
 import FormPage from './pages/Form/Form.jsx'
 import { getCursoPorId } from "./data/cursos"
+import BackToTop from "./components/BackToTop/BackToTop.jsx"
 
 const tituloPadrao = "Aprendizagem Profissional | Pão dos Pobres"
 
@@ -72,6 +73,7 @@ function App() {
       </Routes>
 
       { <Footer /> }
+      { <BackToTop /> }
     </BrowserRouter>
   )
 }
