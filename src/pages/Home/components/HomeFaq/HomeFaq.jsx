@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import FaqAccordion from "../../../../components/Faq/FaqAccordion"
 import faqHomeData from "../../../../data/faqHomeData"
 import "./HomeFaq.css"
@@ -30,9 +31,9 @@ function HomeFaq() {
                     />
                 ))}
 
-                <a className="btn faq-home-link" href="/faq">
+                <Link to="/faq" className="btn faq-home-link" >
                     Ver mais perguntas
-                </a>
+                </Link>
             </div>
         </section>
     )
