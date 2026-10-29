@@ -1,0 +1,202 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinza-claro);
+    padding: 4rem 2rem;
+}
+
+.titulo__form {
+    color: var(--azul-claro);
+    text-align: center;
+}
+
+.form__paragrafo {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.fieldset__formulario {
+    padding: 20px;
+    border: 2px solid var(--azul-aco-divisor);
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.fieldset__formulario legend {
+    font-size: 20px;
+    padding: 0 12px;
+    color: var(--azul-claro);
+    font-weight: bold;
+    font-family: var(--fonte-texto);
+}
+
+.corpo-formulario {
+    background-color: var(--branco-puro);
+    border-radius: 8px;
+    padding: 32px;
+    width: 100%;
+    max-width: 1375px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.corpo-formulario label {
+    display: block;
+    font-family: var(--fonte-texto);
+    color: var(--texto-principal);
+    margin: 14px 0;
+}
+
+.corpo-formulario input {
+    width: 100%;
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid var(--cor-cinza-medio);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.corpo-formulario input:focus {
+    outline: none;
+    border-color: var(--azul-claro);
+}
+
+.linha {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.campo-largo {
+    flex: 1;
+}
+
+.campo-curto {
+    width: 200px;
+}
+
+.mensagem-validacao {
+    display: none;
+    margin-top: 8px;
+    color: var(--alerta);
+    font-weight: 600;
+}
+
+.campo-ajuda {
+    font-weight: 600;
+    color: #000;
+    font-size: 15px;
+    font-family: var(--fonte-destaque);
+    padding: 8px 0;
+}
+
+
+select, select, textarea {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid var(--cor-cinza-medio);
+    color: var(--texto-principal);
+    transition: 0.5s;
+}
+
+select:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--azul-claro);
+} 
+
+.oculto {
+    display: none;
+}
+
+textarea {
+    max-width: 100%;
+    resize: vertical;
+}
+
+.grupo-radio {
+    display: flex;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 120px;
+    border: 2px solid var(--cor-cinza-medio);
+}
+
+.linha-checkbox {
+    background-color: var(--cinza-claro);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consentimento {
+    display: flex;
+    align-items: flex-start;
+    max-width: 830px;
+    gap: 12px;
+    width: 100%;
+}
+
+.consentimento input[type="checkbox"] {
+    width: auto;
+    margin-top: 3px;
+}
+
+.linha-checkbox input {
+    cursor: pointer;
+}
+
+.linha-checkbox label {
+    display: flex;
+    align-items: flex-start;
+}
+
+.formulario .btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--laranja-alerta);
+    border: none;
+    cursor: pointer;
+    color: var(--branco-puro);
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.formulario .btn:hover {
+    background-color: var(--cor-laranja-hover);
+}
+
+@media(max-width: 586px) {
+
+    .linha {
+        display: block;
+    }
+
+   .linha.idade {
+    display: block;
+    }
+
+    .campo-largo.idade {
+    flex: inherit;
+    }
+
+    .campo-curto.idade {
+        width: 180px;
+    }
+
+    .campo-curto {
+    width: 90px;
+    }
+
+    .periodo {
+        width: 100%;
+    }
+}
