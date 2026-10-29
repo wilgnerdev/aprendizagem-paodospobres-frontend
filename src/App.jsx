@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home.jsx"
 import CursoDetalhes from "./pages/CursoDetalhes/CursoDetalhes.jsx"
 import Footer from "./components/Footer/Footer"
 import FaqPage from "./pages/FaqPage/FaqPage.jsx"
+import FormPage from './pages/Form/Form.jsx'
 import { getCursoPorId } from "./data/cursos"
 
 const tituloPadrao = "Aprendizagem Profissional | Pão dos Pobres"
@@ -53,7 +54,7 @@ function ScrollToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [pathname, hash]);
 
-  return null;
+  return null
 }
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cursos/:id" element={<CursoDetalhes />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/inscricao" element={<FormPage />} />
       </Routes>
 
       { <Footer /> }
