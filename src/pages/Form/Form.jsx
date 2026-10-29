@@ -3,6 +3,7 @@ import { useState } from "react"
 import { buscarCep } from "../../services/viacep"
 import { calcularIdade, validarCandidato } from "../../utils/formulario-validacoes"
 import './Form.css'
+import VoltarHome from '../../components/VoltarHome/VoltarHome'
 
 const cursos = [
   ["assistente-administrativo", "Assistente Administrativo"],
@@ -285,6 +286,7 @@ export default function Form() {
   }
 
   return (
+    <>
     <section className="formulario" id="inscreva-se">
       <form
         id="formCadastro"
@@ -811,5 +813,7 @@ export default function Form() {
         </div>
       )}
     </section>
+    <VoltarHome />
+    </>
   )
 }

@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { getCursoPorId, notaPcD } from "../../data/cursos"
+import VoltarHome from "../../components/VoltarHome/VoltarHome"
 import "./CursoDetalhes.css"
 
 function CursoDetalhes() {
@@ -147,6 +148,7 @@ function CursoDetalhes() {
           </div>
         </aside>
       </main>
+      <VoltarHome />
     </>
   )
 }

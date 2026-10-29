@@ -1,9 +1,11 @@
 import './FaqPage.css'
 import faqPageData from '../../data/faqPageData'
 import FaqAccordion from '../../components/Faq/FaqAccordion'
+import VoltarHome from '../../components/VoltarHome/VoltarHome'
 
 function FaqPage() {
     return (
+        <>
         <section className="faq-container">
                 <div className="faq-banner">
                     <div className="container">
@@ -56,6 +58,8 @@ function FaqPage() {
                     </a>
                 </div>
             </section>
+            <VoltarHome />
+            </>
     )
 }
 
