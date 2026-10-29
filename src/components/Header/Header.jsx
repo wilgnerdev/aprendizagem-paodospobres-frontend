@@ -128,8 +128,8 @@ export default function Header() {
           </li>
 
           <li>
-            <Link to="/" onClick={closeMenu}>
-              FAQ
+            <Link to="/faq" onClick={closeMenu}>
+              Faq
             </Link>
           </li>
 
