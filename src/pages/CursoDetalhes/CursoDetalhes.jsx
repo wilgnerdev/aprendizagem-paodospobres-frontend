@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { getCursoPorId, notaPcD } from "../../data/cursos"
 import "./CursoDetalhes.css"
@@ -7,12 +7,6 @@ import "./CursoDetalhes.css"
 function CursoDetalhes() {
   const { id } = useParams();
   const curso = getCursoPorId(id);
-
-  useEffect(() => {
-    document.title = curso
-      ? `${curso.titulo} | Pão dos Pobres`
-      : "Curso não encontrado | Pão dos Pobres";
-  }, [curso]);
 
   if (!curso) {
     return (

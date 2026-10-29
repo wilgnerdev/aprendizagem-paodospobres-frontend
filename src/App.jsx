@@ -1,11 +1,41 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
-import { useLayoutEffect } from "react"
+import { useEffect, useLayoutEffect } from "react"
 
 import Header from "./components/Header/Header"
 import Home from "./pages/Home/Home.jsx"
 import CursoDetalhes from "./pages/CursoDetalhes/CursoDetalhes.jsx"
 import Footer from "./components/Footer/Footer"
 import FaqPage from "./pages/FaqPage/FaqPage.jsx"
+import { getCursoPorId } from "./data/cursos"
+
+const tituloPadrao = "Aprendizagem Profissional | Pão dos Pobres"
+
+function AtualizarTitulo() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    let titulo = tituloPadrao
+
+    if (pathname === "/faq") {
+      titulo = "Perguntas frequentes | Pão dos Pobres"
+    } else if (pathname === "/inscricao") {
+      titulo = "Inscrição | Pão dos Pobres"
+    } else {
+      const cursoMatch = pathname.match(/^\/cursos\/([^/]+)\/?$/)
+
+      if (cursoMatch) {
+        const curso = getCursoPorId(cursoMatch[1])
+        titulo = curso
+          ? `${curso.titulo} | Pão dos Pobres`
+          : "Curso não encontrado | Pão dos Pobres"
+      }
+    }
+
+    document.title = titulo
+  }, [pathname])
+
+  return null
+}
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -29,6 +59,7 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
+      <AtualizarTitulo />
       <ScrollToTop />
       { <Header /> }
 
